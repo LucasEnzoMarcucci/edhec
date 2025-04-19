@@ -1,0 +1,19 @@
+{
+  "name": "edhec",
+  "version": "1.0.0",
+  "main": "src/weather.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/weather.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "dependencies": {
+    "axios": "^1.8.4",
+    "dotenv": "^16.5.0",
+    "yargs": "^17.7.2"
+  }
+}
