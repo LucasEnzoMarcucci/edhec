@@ -1,3 +1,8 @@
+## Installation
+```powershell
+npm install
+```
+
 ## Start the project
 
 Get the forecasts with full control (city, file format, filename)
@@ -10,4 +15,4 @@ You can just pass the city it will use the default arguments
 node src/weather.js --city="Roma"
 ```
 
-The files created are stored in the "ressources" folder
+Only the csv file format is supported yet, the files created are stored in the "ressources" folder
