@@ -1,18 +1,72 @@
-## Installation
-```powershell
+# 🌦️ Weather Forecast CLI - Node.js
+
+This project is a Node.js script that retrieves the weather forecast for a given city over the next 3 days, and generates a CSV file with the following data :
+
+- **Date**
+- **Weather Description**
+- **Average Temperature**
+
+<br>
+
+## 1. Prerequisites
+
+- Node.js ≥ 12
+- A free API key obtained from [https://www.weatherapi.com](https://www.weatherapi.com)
+
+<br>
+
+## 2. Installation
+
+Clone the project :
+
+```bash
+git clone https://github.com/votre-utilisateur/weather-cli.git
+cd weather-cli
+```
+
+Install the depedencies :
+
+```bash
 npm install
 ```
 
-## Start the project
+Create the `.env` file in the root folderà la racine with the following variables :
 
-Get the forecasts with full control (city, file format, filename)
-```powershell
+```env
+WEATHER_API_KEY=your_api_key_here
+WEATHER_BASE_URL=https://api.weatherapi.com/v1
+WEATHER_FORECAST_ENDPOINT=/forecast.json
+```
+
+<br>
+
+## 3. Usage
+
+### Full mode (city, format, file name)
+
+```bash
 node src/weather.js --city="London" --format="csv" --filename="weather.csv"
 ```
 
-You can just pass the city it will use the default arguments
-```powershell
+### Quick mode (city only, the rest is default)
+
+```bash
 node src/weather.js --city="Roma"
 ```
 
-Only the csv file format is supported yet, the files created are stored in the "ressources" folder
+Defautls :
+- format = `csv`
+- filename = `roma.csv` (automatically transformed city)
+
+<br>
+
+## 4. CSV output example
+
+A `resources/london.csv` file is generated, with contents like:
+
+```
+Date,Weather,Average Temperature
+22/04/2025,Sunny,17.5
+23/04/2025,Cloudy,15.8
+24/04/2025,Rain,13.2
+```
