@@ -29,7 +29,7 @@ const main = async () => {
 
     const formatter = formatters[format];
     if (!formatter) throw new Error(`Unsupported format: ${format}`);
-    formatter(filename, weatherData);
+    await formatter(filename, weatherData);
 
   } catch (error) {
     console.error('Error:', error.message);

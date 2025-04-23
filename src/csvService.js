@@ -16,8 +16,8 @@ const generateCsv = async (fileName, data) => {
   const rows = data.map(entry => {
     try {
       const date = entry.date || 'N/A';
-      const weatherText = entry.day.condition.text || 'N/A';
-      const avgTemp = entry.day.avgtemp_c || 'N/A';
+      const weatherText = entry.day.condition?.text || 'N/A';
+      const avgTemp = entry.day?.avgtemp_c || 'N/A';
       return `${date},${weatherText},${avgTemp}`;
     } catch (error) {
       console.warn('Error while generating csv data', error.message);

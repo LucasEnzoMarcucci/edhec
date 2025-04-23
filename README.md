@@ -20,8 +20,8 @@ This project is a Node.js script that retrieves the weather forecast for a given
 Clone the project :
 
 ```bash
-git clone https://github.com/votre-utilisateur/weather-cli.git
-cd weather-cli
+git clone https://github.com/votre-utilisateur//edhec.git
+cd edhec
 ```
 
 Install the depedencies :
@@ -30,7 +30,7 @@ Install the depedencies :
 npm install
 ```
 
-Create the `.env` file in the root folderà la racine with the following variables :
+Create the `.env` file in the root folder with the following variables :
 
 ```env
 WEATHER_API_KEY=your_api_key_here
@@ -62,7 +62,7 @@ Defautls :
 
 ## 4. CSV output example
 
-A `resources/london.csv` file is generated, with contents like:
+A `ressources/london.csv` file is generated, with contents like:
 
 ```
 Date,Weather,Average Temperature

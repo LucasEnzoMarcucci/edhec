@@ -4,13 +4,13 @@
  * @returns {string} - The input string
  */
 const handleInput = (input) => {
-    if (!input || typeof input !== 'string') return '';
+  if (!input || typeof input !== 'string') return '';
 
-    // Remove special characters
-    return input
-        .trim()
-        .replace(/[^\w\s-]/g, '')
-        .replace(/\s+/g, ' ');
+  // Remove special characters
+  return input
+    .trim()
+    .replace(/[^\w\s-]/g, '')
+    .replace(/\s+/g, ' ');
 };
 
 export { handleInput };
